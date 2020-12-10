@@ -33,6 +33,11 @@ gem 'simple_form'
 gem "haml-rails", "~> 2.0"
 gem 'jquery-rails'
 gem "bootstrap", "~> 4.4.1"
+gem "sidekiq", "~> 6.1.2"
+gem 'sidekiq-scheduler'
+gem 'sidekiq-unique-jobs'
+
+gem 'nuntium_api'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
