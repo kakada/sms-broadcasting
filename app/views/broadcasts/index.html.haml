@@ -1,0 +1,24 @@
+.container
+  .action.mt-3
+    = link_to "New broadcast", new_broadcast_path, class: "btn btn-primary float-right"
+    
+    %h2= "Broadcasts: #{@broadcasts.count}"
+
+  %table.table
+    %thead
+      %tr
+        %th{:scope => "col"} #
+        %th{:scope => "col"} Testers
+        %th{:scope => "col"} Date
+    %tbody
+      - i = 0
+      - @broadcasts.each do |broadcast|
+        - next if broadcast.testers.count == 0
+
+        - i += 1
+        %tr
+          %td= i
+          %td= broadcast.testers.count
+          %td= broadcast.updated_at.in_time_zone('Asia/Bangkok')
+  
+  

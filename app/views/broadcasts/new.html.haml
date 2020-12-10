@@ -1,0 +1,9 @@
+.container
+  .centered
+    .card
+      .card-header
+        %h5 Choose contact(.CSV)
+      .card-body
+        = simple_form_for :broadcasts, url: broadcasts_path do |f|
+          = f.input :file, as: :file, label: false
+          = f.submit "Upload", class: "btn btn-primary"

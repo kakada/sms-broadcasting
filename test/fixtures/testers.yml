@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: 1
+  gender: MyString
+  phone_number: 
+  lab_code: MyString
+  broadcast: one
+
+two:
+  age: 1
+  gender: MyString
+  phone_number: 
+  lab_code: MyString
+  broadcast: two
